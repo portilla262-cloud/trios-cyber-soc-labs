@@ -2,7 +2,7 @@
 
 Hands-on cybersecurity laboratory activities completed during my SOC internship learning path with TRIOS CYBER.
 
-This repository documents practical work in isolated and authorized lab environments, with a focus on networking, traffic analysis, service discovery, TCP behavior, and endpoint baseline collection.
+This repository documents practical work in isolated and authorized lab environments, with a focus on networking, traffic analysis, service discovery, TCP behavior, endpoint baseline collection, and authentication log analysis.
 
 ## Laboratory Overview
 
@@ -13,6 +13,7 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 3](./lab-03-wireshark-protocol-analysis/) | Wireshark Traffic Capture and Protocol Analysis | Wireshark, Kali Linux, dig | DNS, TCP, HTTP, HTTPS/TLS, packet analysis |
 | [Lab 4](./lab-04-tcp-handshake-analysis/) | TCP Connection Establishment and Teardown Analysis | Wireshark, Kali Linux, curl, Python HTTP server | TCP handshake, ports, FIN/ACK teardown |
 | [Lab 5](./lab-05-endpoint-baseline/) | Endpoint Baseline Collection and System State Documentation | Kali Linux, Linux CLI tools | Process, service, socket, user and system-state baselining |
+| [Lab 6](./lab-06-failed-authentication-log-analysis/) | Failed Authentication Attempts and Log Analysis | Kali Linux, journalctl, PAM, grep | Authentication log analysis, event correlation, failed-login investigation |
 
 ## Skills Demonstrated
 
@@ -22,6 +23,8 @@ This repository documents practical work in isolated and authorized lab environm
 - TCP connection lifecycle analysis
 - DNS and web traffic analysis
 - Linux endpoint baseline collection
+- Linux authentication log analysis
+- Failed-login event correlation
 - Technical documentation and evidence collection
 - Working in isolated and authorized cybersecurity lab environments
 
@@ -34,7 +37,7 @@ This repository documents practical work in isolated and authorized lab environm
 - Wireshark
 - Nmap
 - Metasploitable 2
-- `dig`, `curl`, `hostnamectl`, `ps`, `ss`, `systemctl`
+- `dig`, `curl`, `hostnamectl`, `ps`, `ss`, `systemctl`, `journalctl`, `grep`
 
 ## Reports
 
