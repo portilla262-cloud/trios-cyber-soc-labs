@@ -14,6 +14,7 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 4](./lab-04-tcp-handshake-analysis/) | TCP Connection Establishment and Teardown Analysis | Wireshark, Kali Linux, curl, Python HTTP server | TCP handshake, ports, FIN/ACK teardown |
 | [Lab 5](./lab-05-endpoint-baseline/) | Endpoint Baseline Collection and System State Documentation | Kali Linux, Linux CLI tools | Process, service, socket, user and system-state baselining |
 | [Lab 6](./lab-06-failed-authentication-log-analysis/) | Failed Authentication Attempts and Log Analysis | Kali Linux, journalctl, PAM, grep | Authentication log analysis, event correlation, failed-login investigation |
+| [Lab 7](./lab-07-simulated-authentication-indicator-collection/) | Simulated Authentication Scenario and Indicator Collection | Ubuntu, Windows, SSH, journalctl, PAM | SSH log analysis, indicator collection, event correlation, timeline reconstruction |
 
 ## Skills Demonstrated
 
@@ -27,6 +28,8 @@ This repository documents practical work in isolated and authorized lab environm
 - Failed-login event correlation
 - Technical documentation and evidence collection
 - Working in isolated and authorized cybersecurity lab environments
+- SSH authentication investigation
+- Indicator collection and event timeline reconstruction
 
 ## Tools and Platforms
 
