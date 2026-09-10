@@ -15,6 +15,7 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 5](./lab-05-endpoint-baseline/) | Endpoint Baseline Collection and System State Documentation | Kali Linux, Linux CLI tools | Process, service, socket, user and system-state baselining |
 | [Lab 6](./lab-06-failed-authentication-log-analysis/) | Failed Authentication Attempts and Log Analysis | Kali Linux, journalctl, PAM, grep | Authentication log analysis, event correlation, failed-login investigation |
 | [Lab 7](./lab-07-simulated-authentication-indicator-collection/) | Simulated Authentication Scenario and Indicator Collection | Ubuntu, Windows, SSH, journalctl, PAM | SSH log analysis, indicator collection, event correlation, timeline reconstruction |
+| [Lab 8](./lab-08-failed-authentication-event-triage-disposition-analysis/) | Failed Authentication Event Triage and Disposition Analysis | Ubuntu, journalctl, SSH/sshd, PAM | SOC triage, severity assessment, event disposition, evidence correlation |
 
 ## Skills Demonstrated
 
@@ -30,6 +31,9 @@ This repository documents practical work in isolated and authorized lab environm
 - Working in isolated and authorized cybersecurity lab environments
 - SSH authentication investigation
 - Indicator collection and event timeline reconstruction
+- SOC event triage and evidence correlation
+- Affected asset, user and source identification
+- Severity assessment and event disposition
 
 ## Tools and Platforms
 
