@@ -16,6 +16,7 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 6](./lab-06-failed-authentication-log-analysis/) | Failed Authentication Attempts and Log Analysis | Kali Linux, journalctl, PAM, grep | Authentication log analysis, event correlation, failed-login investigation |
 | [Lab 7](./lab-07-simulated-authentication-indicator-collection/) | Simulated Authentication Scenario and Indicator Collection | Ubuntu, Windows, SSH, journalctl, PAM | SSH log analysis, indicator collection, event correlation, timeline reconstruction |
 | [Lab 8](./lab-08-failed-authentication-event-triage-disposition-analysis/) | Failed Authentication Event Triage and Disposition Analysis | Ubuntu, journalctl, SSH/sshd, PAM | SOC triage, severity assessment, event disposition, evidence correlation |
+| [Lab 9](./lab-09-windows-event-viewer-log-inspection-soc-relevance-analysis/) | Windows Event Viewer Log Inspection and SOC Relevance Analysis | Windows Event Viewer, Security/System/Application logs | Windows event log analysis, event filtering, authentication analysis, SOC relevance assessment |
 
 ## Skills Demonstrated
 
@@ -34,6 +35,10 @@ This repository documents practical work in isolated and authorized lab environm
 - SOC event triage and evidence correlation
 - Affected asset, user and source identification
 - Severity assessment and event disposition
+- Windows Event Viewer log analysis
+- Windows authentication and privileged-logon analysis
+- Windows service-installation event analysis
+- Event filtering and SOC relevance assessment
 
 ## Tools and Platforms
 
@@ -45,6 +50,8 @@ This repository documents practical work in isolated and authorized lab environm
 - Nmap
 - Metasploitable 2
 - `dig`, `curl`, `hostnamectl`, `ps`, `ss`, `systemctl`, `journalctl`, `grep`
+- Windows Event Viewer (`eventvwr.msc`)
+- Windows Security, System and Application logs
 
 ## Reports
 
