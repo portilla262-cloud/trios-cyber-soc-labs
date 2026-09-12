@@ -17,28 +17,33 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 7](./lab-07-simulated-authentication-indicator-collection/) | Simulated Authentication Scenario and Indicator Collection | Ubuntu, Windows, SSH, journalctl, PAM | SSH log analysis, indicator collection, event correlation, timeline reconstruction |
 | [Lab 8](./lab-08-failed-authentication-event-triage-disposition-analysis/) | Failed Authentication Event Triage and Disposition Analysis | Ubuntu, journalctl, SSH/sshd, PAM | SOC triage, severity assessment, event disposition, evidence correlation |
 | [Lab 9](./lab-09-windows-event-viewer-log-inspection-soc-relevance-analysis/) | Windows Event Viewer Log Inspection and SOC Relevance Analysis | Windows Event Viewer, Security/System/Application logs | Windows event log analysis, event filtering, authentication analysis, SOC relevance assessment |
+| [Lab 10](./lab-10-authentication-log-extraction-timeline-analysis/) | Authentication Log Extraction and Timeline Analysis | Ubuntu, Windows PowerShell, SSH, journalctl, grep, tail | Authentication log extraction, SSH event correlation, timeline reconstruction, evidence preservation |
+| [Lab 11](./lab-11-log-filtering-pattern-detection/) | Log Filtering and Pattern Detection | Ubuntu, grep, awk, sort | Log filtering, field extraction, frequency analysis, repeated-indicator detection |
 
 ## Skills Demonstrated
 
 - Network configuration and troubleshooting
-- Safe host and service discovery
+- Host and service discovery
 - Packet capture and protocol analysis
 - TCP connection lifecycle analysis
 - DNS and web traffic analysis
 - Linux endpoint baseline collection
 - Linux authentication log analysis
-- Failed-login event correlation
-- Technical documentation and evidence collection
-- Working in isolated and authorized cybersecurity lab environments
 - SSH authentication investigation
-- Indicator collection and event timeline reconstruction
-- SOC event triage and evidence correlation
-- Affected asset, user and source identification
-- Severity assessment and event disposition
 - Windows Event Viewer log analysis
 - Windows authentication and privileged-logon analysis
 - Windows service-installation event analysis
+- SOC event triage and evidence correlation
+- Affected asset, user and source identification
+- Severity assessment and event disposition
 - Event filtering and SOC relevance assessment
+- Authentication event correlation and timeline reconstruction
+- Source IP, port and authentication-field analysis
+- Linux command-line log analysis
+- Log filtering and structured field extraction with `grep` and `awk`
+- Frequency analysis and security log pattern detection
+- Indicator collection and evidence preservation
+- Technical documentation and evidence collection
 
 ## Tools and Platforms
 
