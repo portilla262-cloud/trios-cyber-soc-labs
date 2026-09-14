@@ -19,6 +19,7 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 9](./lab-09-windows-event-viewer-log-inspection-soc-relevance-analysis/) | Windows Event Viewer Log Inspection and SOC Relevance Analysis | Windows Event Viewer, Security/System/Application logs | Windows event log analysis, event filtering, authentication analysis, SOC relevance assessment |
 | [Lab 10](./lab-10-authentication-log-extraction-timeline-analysis/) | Authentication Log Extraction and Timeline Analysis | Ubuntu, Windows PowerShell, SSH, journalctl, grep, tail | Authentication log extraction, SSH event correlation, timeline reconstruction, evidence preservation |
 | [Lab 11](./lab-11-log-filtering-pattern-detection/) | Log Filtering and Pattern Detection | Ubuntu, grep, awk, sort | Log filtering, field extraction, frequency analysis, repeated-indicator detection |
+| [Lab 12](./lab-12-splunk-authentication-event-search-time-filtering-visualization/) | Authentication Event Search, Time Filtering, and Visualization with Splunk | Splunk Enterprise, Ubuntu, Search & Reporting, SPL | SIEM log ingestion, authentication-event search, time filtering, aggregation, visualization and reporting |
 
 ## Skills Demonstrated
 
@@ -44,6 +45,9 @@ This repository documents practical work in isolated and authorized lab environm
 - Frequency analysis and security log pattern detection
 - Indicator collection and evidence preservation
 - Technical documentation and evidence collection
+- Splunk SIEM log ingestion and source-type configuration
+- SPL authentication-event searching and time filtering
+- Event aggregation, visualization and saved-report creation
 
 ## Tools and Platforms
 
@@ -57,6 +61,9 @@ This repository documents practical work in isolated and authorized lab environm
 - `dig`, `curl`, `hostnamectl`, `ps`, `ss`, `systemctl`, `journalctl`, `grep`
 - Windows Event Viewer (`eventvwr.msc`)
 - Windows Security, System and Application logs
+- Splunk Enterprise
+- Splunk Search & Reporting
+- SPL commands including `rex` and `stats`
 
 ## Reports
 
