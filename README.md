@@ -20,6 +20,7 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 10](./lab-10-authentication-log-extraction-timeline-analysis/) | Authentication Log Extraction and Timeline Analysis | Ubuntu, Windows PowerShell, SSH, journalctl, grep, tail | Authentication log extraction, SSH event correlation, timeline reconstruction, evidence preservation |
 | [Lab 11](./lab-11-log-filtering-pattern-detection/) | Log Filtering and Pattern Detection | Ubuntu, grep, awk, sort | Log filtering, field extraction, frequency analysis, repeated-indicator detection |
 | [Lab 12](./lab-12-splunk-authentication-event-search-time-filtering-visualization/) | Authentication Event Search, Time Filtering, and Visualization with Splunk | Splunk Enterprise, Ubuntu, Search & Reporting, SPL | SIEM log ingestion, authentication-event search, time filtering, aggregation, visualization and reporting |
+| [Lab 13](./lab-13-correlation-rule-design-manual-detection-testing/) | Correlation Rule Design and Manual Detection Testing | Splunk Enterprise, Search & Reporting, SPL | SIEM correlation-rule design, threshold detection, user/source correlation, time-window analysis |
 
 ## Skills Demonstrated
 
@@ -48,6 +49,9 @@ This repository documents practical work in isolated and authorized lab environm
 - Splunk SIEM log ingestion and source-type configuration
 - SPL authentication-event searching and time filtering
 - Event aggregation, visualization and saved-report creation
+- SIEM correlation-rule design and threshold-based detection
+- User/source correlation and time-window analysis
+- Detection validation and reusable correlation searches
 
 ## Tools and Platforms
 
@@ -63,7 +67,7 @@ This repository documents practical work in isolated and authorized lab environm
 - Windows Security, System and Application logs
 - Splunk Enterprise
 - Splunk Search & Reporting
-- SPL commands including `rex` and `stats`
+- SPL commands including `rex`, `stats` `rex`, `stats`, `eval`, `where`, `convert` and `table`
 
 ## Reports
 
