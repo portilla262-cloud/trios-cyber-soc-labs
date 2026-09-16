@@ -21,6 +21,7 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 11](./lab-11-log-filtering-pattern-detection/) | Log Filtering and Pattern Detection | Ubuntu, grep, awk, sort | Log filtering, field extraction, frequency analysis, repeated-indicator detection |
 | [Lab 12](./lab-12-splunk-authentication-event-search-time-filtering-visualization/) | Authentication Event Search, Time Filtering, and Visualization with Splunk | Splunk Enterprise, Ubuntu, Search & Reporting, SPL | SIEM log ingestion, authentication-event search, time filtering, aggregation, visualization and reporting |
 | [Lab 13](./lab-13-correlation-rule-design-manual-detection-testing/) | Correlation Rule Design and Manual Detection Testing | Splunk Enterprise, Search & Reporting, SPL | SIEM correlation-rule design, threshold detection, user/source correlation, time-window analysis |
+| [Lab 14](./lab-14-local-web-log-analysis-request-pattern-detection/) | Local Web Log Analysis and Request Pattern Detection | Apache2, Ubuntu, Firefox, grep, awk | Web access-log analysis, HTTP field identification, status-code filtering, repeated-request detection |
 
 ## Skills Demonstrated
 
@@ -52,6 +53,8 @@ This repository documents practical work in isolated and authorized lab environm
 - SIEM correlation-rule design and threshold-based detection
 - User/source correlation and time-window analysis
 - Detection validation and reusable correlation searches
+- Apache web access-log analysis and HTTP request-pattern detection
+- HTTP status-code and request-path analysis
 
 ## Tools and Platforms
 
@@ -68,6 +71,8 @@ This repository documents practical work in isolated and authorized lab environm
 - Splunk Enterprise
 - Splunk Search & Reporting
 - SPL commands including `rex`, `stats` `rex`, `stats`, `eval`, `where`, `convert` and `table`
+- Apache2 and Apache access logs (`/var/log/apache2/access.log`)
+- Firefox
 
 ## Reports
 
