@@ -22,6 +22,7 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 12](./lab-12-splunk-authentication-event-search-time-filtering-visualization/) | Authentication Event Search, Time Filtering, and Visualization with Splunk | Splunk Enterprise, Ubuntu, Search & Reporting, SPL | SIEM log ingestion, authentication-event search, time filtering, aggregation, visualization and reporting |
 | [Lab 13](./lab-13-correlation-rule-design-manual-detection-testing/) | Correlation Rule Design and Manual Detection Testing | Splunk Enterprise, Search & Reporting, SPL | SIEM correlation-rule design, threshold detection, user/source correlation, time-window analysis |
 | [Lab 14](./lab-14-local-web-log-analysis-request-pattern-detection/) | Local Web Log Analysis and Request Pattern Detection | Apache2, Ubuntu, Firefox, grep, awk | Web access-log analysis, HTTP field identification, status-code filtering, repeated-request detection |
+| [Lab 15](./lab-15-alert-prioritization-soc-priority-assessment/) | Alert Prioritization and SOC Priority Assessment | Splunk, SSH logs, Apache access logs, Windows Event Viewer, spreadsheet | Alert prioritization, asset criticality, impact assessment, evidence-quality evaluation |
 
 ## Skills Demonstrated
 
@@ -55,6 +56,8 @@ This repository documents practical work in isolated and authorized lab environm
 - Detection validation and reusable correlation searches
 - Apache web access-log analysis and HTTP request-pattern detection
 - HTTP status-code and request-path analysis
+- SOC alert prioritization using asset criticality, repetition, user impact and evidence quality
+- Multi-source alert assessment and priority justification
 
 ## Tools and Platforms
 
