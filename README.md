@@ -23,6 +23,7 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 13](./lab-13-correlation-rule-design-manual-detection-testing/) | Correlation Rule Design and Manual Detection Testing | Splunk Enterprise, Search & Reporting, SPL | SIEM correlation-rule design, threshold detection, user/source correlation, time-window analysis |
 | [Lab 14](./lab-14-local-web-log-analysis-request-pattern-detection/) | Local Web Log Analysis and Request Pattern Detection | Apache2, Ubuntu, Firefox, grep, awk | Web access-log analysis, HTTP field identification, status-code filtering, repeated-request detection |
 | [Lab 15](./lab-15-alert-prioritization-soc-priority-assessment/) | Alert Prioritization and SOC Priority Assessment | Splunk, SSH logs, Apache access logs, Windows Event Viewer, spreadsheet | Alert prioritization, asset criticality, impact assessment, evidence-quality evaluation |
+| [Lab 16](./lab-16-wazuh-server-vm-deployment-preparation-network-planning/) | Wazuh Server VM Deployment Preparation and Network Planning | Oracle VirtualBox, Ubuntu Server, Linux CLI | Wazuh deployment preparation, resource validation, network planning, pre-installation readiness assessment |
 
 ## Skills Demonstrated
 
@@ -58,6 +59,9 @@ This repository documents practical work in isolated and authorized lab environm
 - HTTP status-code and request-path analysis
 - SOC alert prioritization using asset criticality, repetition, user impact and evidence quality
 - Multi-source alert assessment and priority justification
+- Wazuh server deployment preparation and pre-installation readiness assessment
+- Linux server resource, storage and connectivity validation
+- SIEM infrastructure and network planning
 
 ## Tools and Platforms
 
@@ -76,6 +80,8 @@ This repository documents practical work in isolated and authorized lab environm
 - SPL commands including `rex`, `stats` `rex`, `stats`, `eval`, `where`, `convert` and `table`
 - Apache2 and Apache access logs (`/var/log/apache2/access.log`)
 - Firefox
+- Ubuntu Server 24.04 LTS
+- hostname, uname, ip, ping, free, nproc, lsblk, df, sudo
 
 ## Reports
 
