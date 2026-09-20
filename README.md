@@ -24,6 +24,7 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 14](./lab-14-local-web-log-analysis-request-pattern-detection/) | Local Web Log Analysis and Request Pattern Detection | Apache2, Ubuntu, Firefox, grep, awk | Web access-log analysis, HTTP field identification, status-code filtering, repeated-request detection |
 | [Lab 15](./lab-15-alert-prioritization-soc-priority-assessment/) | Alert Prioritization and SOC Priority Assessment | Splunk, SSH logs, Apache access logs, Windows Event Viewer, spreadsheet | Alert prioritization, asset criticality, impact assessment, evidence-quality evaluation |
 | [Lab 16](./lab-16-wazuh-server-vm-deployment-preparation-network-planning/) | Wazuh Server VM Deployment Preparation and Network Planning | Oracle VirtualBox, Ubuntu Server, Linux CLI | Wazuh deployment preparation, resource validation, network planning, pre-installation readiness assessment |
+| [Lab 17](./lab-17-wazuh-all-in-one-installation-dashboard-verification/) | Wazuh All-in-One Installation and Dashboard Verification | Wazuh, Ubuntu Server, Filebeat, SSH, systemctl | Wazuh deployment, service validation, SSH tunneling, dashboard access verification |
 
 ## Skills Demonstrated
 
@@ -62,6 +63,11 @@ This repository documents practical work in isolated and authorized lab environm
 - Wazuh server deployment preparation and pre-installation readiness assessment
 - Linux server resource, storage and connectivity validation
 - SIEM infrastructure and network planning
+- azuh server deployment preparation and pre-installation readiness assessment
+- Linux server resource, storage and connectivity validation
+- SIEM infrastructure and network planning
+- Wazuh all-in-one deployment and core-service validation
+- Secure local dashboard access through SSH tunneling
 
 ## Tools and Platforms
 
@@ -81,7 +87,10 @@ This repository documents practical work in isolated and authorized lab environm
 - Apache2 and Apache access logs (`/var/log/apache2/access.log`)
 - Firefox
 - Ubuntu Server 24.04 LTS
-- hostname, uname, ip, ping, free, nproc, lsblk, df, sudo
+- `hostname`, `uname`, `ip`, `ping`, `free`, `nproc`, `lsblk`, `df`, `sudo`
+- Wazuh manager, indexer and dashboard
+- Filebeat
+- OpenSSH / `sshd` and SSH local port forwarding (`ssh -L`)
 
 ## Reports
 
