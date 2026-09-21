@@ -26,6 +26,7 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 16](./lab-16-wazuh-server-vm-deployment-preparation-network-planning/) | Wazuh Server VM Deployment Preparation and Network Planning | Oracle VirtualBox, Ubuntu Server, Linux CLI | Wazuh deployment preparation, resource validation, network planning, pre-installation readiness assessment |
 | [Lab 17](./lab-17-wazuh-all-in-one-installation-dashboard-verification/) | Wazuh All-in-One Installation and Dashboard Verification | Wazuh, Ubuntu Server, Filebeat, SSH, systemctl | Wazuh deployment, service validation, SSH tunneling, dashboard access verification |
 | [Lab 18](./lab-18-wazuh-component-health-check-post-installation-verification/) | Wazuh Component Health Check and Post-Installation Verification | Wazuh, Ubuntu Server, Filebeat, SSH, LVM, fsck | Component health checks, post-installation verification, storage recovery, SIEM troubleshooting |
+| [Lab 19](./lab-19-linux-wazuh-agent-deployment-enrollment-verification/) | Linux Wazuh Agent Deployment and Enrollment Verification | Wazuh, Ubuntu Linux, VirtualBox, SSH, systemctl | Linux agent deployment, enrollment verification, manager-agent connectivity, endpoint registration |
 
 ## Skills Demonstrated
 
@@ -71,6 +72,8 @@ This repository documents practical work in isolated and authorized lab environm
 - Secure local dashboard access through SSH tunneling
 - Wazuh post-installation health checking and operational verification
 - Linux storage, LVM and filesystem recovery for SIEM troubleshooting
+- Wazuh Linux agent deployment and enrollment verification
+- Wazuh manager-agent connectivity and enrollment-port validation
 
 ## Tools and Platforms
 
@@ -95,7 +98,8 @@ This repository documents practical work in isolated and authorized lab environm
 - Filebeat
 - OpenSSH / `sshd` and SSH local port forwarding (`ssh -L`)
 - Linux LVM utilities, `dpkg` and `fsck.ext4`
-
+- Wazuh agent, `wazuh-authd` and `wazuh-remoted`
+  
 ## Reports
 
 Each lab directory contains:
