@@ -27,6 +27,7 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 17](./lab-17-wazuh-all-in-one-installation-dashboard-verification/) | Wazuh All-in-One Installation and Dashboard Verification | Wazuh, Ubuntu Server, Filebeat, SSH, systemctl | Wazuh deployment, service validation, SSH tunneling, dashboard access verification |
 | [Lab 18](./lab-18-wazuh-component-health-check-post-installation-verification/) | Wazuh Component Health Check and Post-Installation Verification | Wazuh, Ubuntu Server, Filebeat, SSH, LVM, fsck | Component health checks, post-installation verification, storage recovery, SIEM troubleshooting |
 | [Lab 19](./lab-19-linux-wazuh-agent-deployment-enrollment-verification/) | Linux Wazuh Agent Deployment and Enrollment Verification | Wazuh, Ubuntu Linux, VirtualBox, SSH, systemctl | Linux agent deployment, enrollment verification, manager-agent connectivity, endpoint registration |
+| [Lab 20](./lab-20-windows-wazuh-agent-deployment-enrollment-verification/) | Windows Wazuh Agent Deployment and Enrollment Verification | Wazuh, Windows 10, PowerShell, VirtualBox | Windows agent deployment, TCP connectivity validation, service verification, endpoint enrollment |
 
 ## Skills Demonstrated
 
@@ -38,6 +39,9 @@ This repository documents practical work in isolated and authorized lab environm
 - Linux endpoint baseline collection
 - Linux authentication log analysis
 - SSH authentication investigation
+- Linux command-line log analysis
+- Log filtering and structured field extraction with `grep` and `awk`
+- Frequency analysis and security log pattern detection
 - Windows Event Viewer log analysis
 - Windows authentication and privileged-logon analysis
 - Windows service-installation event analysis
@@ -47,11 +51,7 @@ This repository documents practical work in isolated and authorized lab environm
 - Event filtering and SOC relevance assessment
 - Authentication event correlation and timeline reconstruction
 - Source IP, port and authentication-field analysis
-- Linux command-line log analysis
-- Log filtering and structured field extraction with `grep` and `awk`
-- Frequency analysis and security log pattern detection
-- Indicator collection and evidence preservation
-- Technical documentation and evidence collection
+- Indicator collection, evidence preservation and technical documentation
 - Splunk SIEM log ingestion and source-type configuration
 - SPL authentication-event searching and time filtering
 - Event aggregation, visualization and saved-report creation
@@ -65,40 +65,38 @@ This repository documents practical work in isolated and authorized lab environm
 - Wazuh server deployment preparation and pre-installation readiness assessment
 - Linux server resource, storage and connectivity validation
 - SIEM infrastructure and network planning
-- azuh server deployment preparation and pre-installation readiness assessment
-- Linux server resource, storage and connectivity validation
-- SIEM infrastructure and network planning
 - Wazuh all-in-one deployment and core-service validation
 - Secure local dashboard access through SSH tunneling
 - Wazuh post-installation health checking and operational verification
 - Linux storage, LVM and filesystem recovery for SIEM troubleshooting
 - Wazuh Linux agent deployment and enrollment verification
+- Wazuh Windows agent deployment and enrollment verification
 - Wazuh manager-agent connectivity and enrollment-port validation
+- Windows endpoint connectivity and Wazuh service validation with PowerShell
 
 ## Tools and Platforms
 
 - Oracle VirtualBox
-- Ubuntu Linux
+- Ubuntu Linux / Ubuntu Server 24.04 LTS
 - Kali Linux
 - Windows
 - Wireshark
 - Nmap
 - Metasploitable 2
-- `dig`, `curl`, `hostnamectl`, `ps`, `ss`, `systemctl`, `journalctl`, `grep`
 - Windows Event Viewer (`eventvwr.msc`)
 - Windows Security, System and Application logs
 - Splunk Enterprise
 - Splunk Search & Reporting
-- SPL commands including `rex`, `stats` `rex`, `stats`, `eval`, `where`, `convert` and `table`
+- SPL commands including `rex`, `stats`, `eval`, `where`, `convert` and `table`
 - Apache2 and Apache access logs (`/var/log/apache2/access.log`)
 - Firefox
-- Ubuntu Server 24.04 LTS
-- `hostname`, `uname`, `ip`, `ping`, `free`, `nproc`, `lsblk`, `df`, `sudo`
 - Wazuh manager, indexer and dashboard
+- Wazuh agent, `wazuh-authd` and `wazuh-remoted`
 - Filebeat
 - OpenSSH / `sshd` and SSH local port forwarding (`ssh -L`)
+- PowerShell commands including `Get-NetAdapter`, `New-NetIPAddress`, `Test-NetConnection` and `Get-Service`
 - Linux LVM utilities, `dpkg` and `fsck.ext4`
-- Wazuh agent, `wazuh-authd` and `wazuh-remoted`
+- Linux CLI tools including `dig`, `curl`, `hostnamectl`, `hostname`, `uname`, `ps`, `ss`, `systemctl`, `journalctl`, `grep`, `awk`, `sort`, `ip`, `ping`, `free`, `nproc`, `lsblk`, `df` and `sudo`
   
 ## Reports
 
