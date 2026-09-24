@@ -28,6 +28,8 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 18](./lab-18-wazuh-component-health-check-post-installation-verification/) | Wazuh Component Health Check and Post-Installation Verification | Wazuh, Ubuntu Server, Filebeat, SSH, LVM, fsck | Component health checks, post-installation verification, storage recovery, SIEM troubleshooting |
 | [Lab 19](./lab-19-linux-wazuh-agent-deployment-enrollment-verification/) | Linux Wazuh Agent Deployment and Enrollment Verification | Wazuh, Ubuntu Linux, VirtualBox, SSH, systemctl | Linux agent deployment, enrollment verification, manager-agent connectivity, endpoint registration |
 | [Lab 20](./lab-20-windows-wazuh-agent-deployment-enrollment-verification/) | Windows Wazuh Agent Deployment and Enrollment Verification | Wazuh, Windows 10, PowerShell, VirtualBox | Windows agent deployment, TCP connectivity validation, service verification, endpoint enrollment |
+| [Lab 21](./lab-21-endpoint-event-collection-wazuh-telemetry-verification/) | Endpoint Event Collection Test and Wazuh Telemetry Verification | Wazuh Dashboard, Threat Hunting, Windows event telemetry | Endpoint telemetry investigation, Wazuh rule correlation, source validation, MITRE ATT&CK mapping |
+| [Lab 22](./lab-22-wazuh-dashboard-investigation/) | Wazuh Dashboard Investigation | Wazuh Dashboard, Threat Hunting, Windows event telemetry | Endpoint telemetry investigation, Wazuh rule correlation, source validation, MITRE ATT&CK mapping |
 
 ## Skills Demonstrated
 
@@ -73,6 +75,9 @@ This repository documents practical work in isolated and authorized lab environm
 - Wazuh Windows agent deployment and enrollment verification
 - Wazuh manager-agent connectivity and enrollment-port validation
 - Windows endpoint connectivity and Wazuh service validation with PowerShell
+- Wazuh Threat Hunting and endpoint telemetry investigation
+- Wazuh rule correlation and source endpoint validation
+- MITRE ATT&CK mapping from Windows endpoint telemetry
 
 ## Tools and Platforms
 
@@ -97,6 +102,10 @@ This repository documents practical work in isolated and authorized lab environm
 - PowerShell commands including `Get-NetAdapter`, `New-NetIPAddress`, `Test-NetConnection` and `Get-Service`
 - Linux LVM utilities, `dpkg` and `fsck.ext4`
 - Linux CLI tools including `dig`, `curl`, `hostnamectl`, `hostname`, `uname`, `ps`, `ss`, `systemctl`, `journalctl`, `grep`, `awk`, `sort`, `ip`, `ping`, `free`, `nproc`, `lsblk`, `df` and `sudo`
+- Wazuh Dashboard - Threat Hunting / Events
+- Wazuh Windows agent
+- Windows System event logs
+- Windows 10 endpoint
   
 ## Reports
 
