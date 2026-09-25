@@ -30,6 +30,7 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 20](./lab-20-windows-wazuh-agent-deployment-enrollment-verification/) | Windows Wazuh Agent Deployment and Enrollment Verification | Wazuh, Windows 10, PowerShell, VirtualBox | Windows agent deployment, TCP connectivity validation, service verification, endpoint enrollment |
 | [Lab 21](./lab-21-endpoint-event-collection-wazuh-telemetry-verification/) | Endpoint Event Collection Test and Wazuh Telemetry Verification | Wazuh Dashboard, Threat Hunting, Windows event telemetry | Endpoint telemetry investigation, Wazuh rule correlation, source validation, MITRE ATT&CK mapping |
 | [Lab 22](./lab-22-wazuh-dashboard-investigation/) | Wazuh Dashboard Investigation | Wazuh Dashboard, Threat Hunting, Windows event telemetry | Endpoint telemetry investigation, Wazuh rule correlation, source validation, MITRE ATT&CK mapping |
+| [Lab 23](./lab-23-wazuh-file-integrity-monitoring/) | Wazuh File Integrity Monitoring Lab | Wazuh FIM, Windows-Agent, syscheck | Real-time file-integrity monitoring, integrity-change validation, checksum analysis |
 
 ## Skills Demonstrated
 
@@ -78,6 +79,8 @@ This repository documents practical work in isolated and authorized lab environm
 - Wazuh Threat Hunting and endpoint telemetry investigation
 - Wazuh rule correlation and source endpoint validation
 - MITRE ATT&CK mapping from Windows endpoint telemetry
+- Wazuh File Integrity Monitoring configuration and real-time file-change detection
+- File-integrity event validation and checksum-change analysis
 
 ## Tools and Platforms
 
@@ -106,6 +109,8 @@ This repository documents practical work in isolated and authorized lab environm
 - Wazuh Windows agent
 - Windows System event logs
 - Windows 10 endpoint
+- Wazuh File Integrity Monitoring (`syscheck`)
+- Windows `ossec.conf`, `sc.exe` and `findstr`
   
 ## Reports
 
