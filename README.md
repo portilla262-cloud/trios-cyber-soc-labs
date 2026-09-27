@@ -31,6 +31,8 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 21](./lab-21-endpoint-event-collection-wazuh-telemetry-verification/) | Endpoint Event Collection Test and Wazuh Telemetry Verification | Wazuh Dashboard, Threat Hunting, Windows event telemetry | Endpoint telemetry investigation, Wazuh rule correlation, source validation, MITRE ATT&CK mapping |
 | [Lab 22](./lab-22-wazuh-dashboard-investigation/) | Wazuh Dashboard Investigation | Wazuh Dashboard, Threat Hunting, Windows event telemetry | Endpoint telemetry investigation, Wazuh rule correlation, source validation, MITRE ATT&CK mapping |
 | [Lab 23](./lab-23-wazuh-file-integrity-monitoring/) | Wazuh File Integrity Monitoring Lab | Wazuh FIM, Windows-Agent, syscheck | Real-time file-integrity monitoring, integrity-change validation, checksum analysis |
+| [Lab 24](./lab-24-wazuh-rule-alert-analysis/) | Wazuh Rule and Alert Analysis | Wazuh Dashboard, Threat Hunting, Windows event telemetry | Rule/alert analysis, event-context interpretation, first-response triage |
+| [Lab 25](./lab-25-brute-force-style-detection-simulation/) | Brute-Force Style Detection Simulation | Wazuh Dashboard, Windows Security logs, Event ID 4625 | Repeated failed-logon analysis, attempt counting, user-focused filtering, escalation assessment |
 
 ## Skills Demonstrated
 
@@ -81,6 +83,9 @@ This repository documents practical work in isolated and authorized lab environm
 - MITRE ATT&CK mapping from Windows endpoint telemetry
 - Wazuh File Integrity Monitoring configuration and real-time file-change detection
 - File-integrity event validation and checksum-change analysis
+- Wazuh rule and alert analysis with event-context interpretation
+- First-response triage action definition from alert metadata
+- Brute-force-style authentication pattern detection and escalation assessment
 
 ## Tools and Platforms
 
@@ -111,6 +116,7 @@ This repository documents practical work in isolated and authorized lab environm
 - Windows 10 endpoint
 - Wazuh File Integrity Monitoring (`syscheck`)
 - Windows `ossec.conf`, `sc.exe` and `findstr`
+- Windows `net accounts` and `net use`
   
 ## Reports
 
