@@ -34,6 +34,9 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 24](./lab-24-wazuh-rule-alert-analysis/) | Wazuh Rule and Alert Analysis | Wazuh Dashboard, Threat Hunting, Windows event telemetry | Rule/alert analysis, event-context interpretation, first-response triage |
 | [Lab 25](./lab-25-brute-force-style-detection-simulation/) | Brute-Force Style Detection Simulation | Wazuh Dashboard, Windows Security logs, Event ID 4625 | Repeated failed-logon analysis, attempt counting, user-focused filtering, escalation assessment |
 | [Lab 26](./lab-26-incident-evidence-collection/) | Incident Evidence Collection | Windows Security logs, Wazuh, wevtutil, EVTX | Incident evidence collection, native log preservation, timeline documentation, evidence organization |
+| [Lab 27](./lab-27-mitre-attack-mapping/) | MITRE ATT&CK Mapping Lab | Wazuh MITRE ATT&CK, Windows Event ID 7045 | ATT&CK technique mapping, tactic validation, evidence-based mapping rationale |
+| [Lab 28](./lab-28-threat-intelligence-ioc-enrichment/) | Threat Intelligence / IOC Enrichment | VirusTotal, Wazuh Threat Hunting, SHA-256 | IOC enrichment, external reputation analysis, internal telemetry correlation, contextual prioritization |
+| [Lab 29](./lab-29-soc-incident-report/) | SOC Incident Report | Wazuh Threat Hunting, Windows Security logs | Incident reporting, timeline correlation, severity assessment, disposition and escalation documentation |
 
 ## Skills Demonstrated
 
@@ -89,7 +92,11 @@ This repository documents practical work in isolated and authorized lab environm
 - Brute-force-style authentication pattern detection and escalation assessment
 - Incident evidence collection and structured evidence organization
 - Windows Security log export and native EVTX preservation
-
+- Evidence-based MITRE ATT&CK technique mapping
+- Threat intelligence and IOC enrichment using external reputation data
+- External IOC reputation and internal SIEM telemetry correlation
+- SOC incident reporting and structured incident documentation
+  
 ## Tools and Platforms
 
 - Oracle VirtualBox
@@ -121,6 +128,8 @@ This repository documents practical work in isolated and authorized lab environm
 - Windows `ossec.conf`, `sc.exe` and `findstr`
 - Windows `net accounts` and `net use`
 - Windows `wevtutil` and native `.evtx` log preservation
+- Wazuh MITRE ATT&CK dashboard
+- VirusTotal
   
 ## Reports
 
