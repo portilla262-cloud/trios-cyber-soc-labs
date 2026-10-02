@@ -2,7 +2,7 @@
 
 Hands-on cybersecurity laboratory activities completed during my SOC internship learning path with TRIOS CYBER.
 
-This repository documents practical work in isolated and authorized lab environments, with a focus on networking, traffic analysis, service discovery, TCP behavior, endpoint baseline collection, and authentication log analysis.
+This repository documents a progressive SOC laboratory portfolio completed in isolated and authorized environments. The work begins with networking, service discovery, packet analysis and endpoint baselining, then advances through authentication-log investigation, Windows event analysis, SIEM workflows with Splunk and Wazuh, alert triage, File Integrity Monitoring (FIM), MITRE ATT&CK mapping, threat-intelligence enrichment, incident evidence collection, incident reporting, and a final end-to-end SOC investigation.
 
 ## Laboratory Overview
 
@@ -37,105 +37,129 @@ This repository documents practical work in isolated and authorized lab environm
 | [Lab 27](./lab-27-mitre-attack-mapping/) | MITRE ATT&CK Mapping Lab | Wazuh MITRE ATT&CK, Windows Event ID 7045 | ATT&CK technique mapping, tactic validation, evidence-based mapping rationale |
 | [Lab 28](./lab-28-threat-intelligence-ioc-enrichment/) | Threat Intelligence / IOC Enrichment | VirusTotal, Wazuh Threat Hunting, SHA-256 | IOC enrichment, external reputation analysis, internal telemetry correlation, contextual prioritization |
 | [Lab 29](./lab-29-soc-incident-report/) | SOC Incident Report | Wazuh Threat Hunting, Windows Security logs | Incident reporting, timeline correlation, severity assessment, disposition and escalation documentation |
+| [Lab 30](./lab-30-final-practical-soc-investigation/) | Final Practical SOC Investigation | Wazuh, Windows System logs, MITRE ATT&CK | End-to-end SOC investigation, evidence correlation, triage, ATT&CK mapping, case closure |
 
 ## Skills Demonstrated
+
+### Networking and Traffic Analysis
 
 - Network configuration and troubleshooting
 - Host and service discovery
 - Packet capture and protocol analysis
 - TCP connection lifecycle analysis
 - DNS and web traffic analysis
+- Apache web access-log and HTTP request-pattern analysis
+
+### Linux and Windows Log Analysis
+
 - Linux endpoint baseline collection
-- Linux authentication log analysis
-- SSH authentication investigation
-- Linux command-line log analysis
-- Log filtering and structured field extraction with `grep` and `awk`
+- Linux authentication and SSH log investigation
+- Linux command-line log analysis with `journalctl`, `grep`, `awk`, `sort` and related utilities
 - Frequency analysis and security log pattern detection
-- Windows Event Viewer log analysis
-- Windows authentication and privileged-logon analysis
-- Windows service-installation event analysis
+- Windows Event Viewer analysis across Security, System and Application logs
+- Windows authentication, privileged-logon and service-installation event analysis
+- Source IP, port, user and authentication-field analysis
+- Authentication-event correlation and timeline reconstruction
+
+### SOC Triage and Incident Analysis
+
 - SOC event triage and evidence correlation
 - Affected asset, user and source identification
-- Severity assessment and event disposition
+- Severity assessment, event disposition and escalation decisions
 - Event filtering and SOC relevance assessment
-- Authentication event correlation and timeline reconstruction
-- Source IP, port and authentication-field analysis
-- Indicator collection, evidence preservation and technical documentation
+- SOC alert prioritization using asset criticality, repetition, user impact and evidence quality
+- Multi-source alert assessment and priority justification
+- First-response triage action definition from alert metadata
+- Brute-force-style authentication pattern detection and escalation assessment
+- SOC incident reporting and structured incident documentation
+- End-to-end SOC investigation lifecycle from telemetry collection to case closure
+
+### SIEM and Detection Engineering
+
 - Splunk SIEM log ingestion and source-type configuration
-- SPL authentication-event searching and time filtering
-- Event aggregation, visualization and saved-report creation
+- SPL authentication-event searching, time filtering, aggregation and visualization
+- Saved-report creation and reusable SIEM searches
 - SIEM correlation-rule design and threshold-based detection
 - User/source correlation and time-window analysis
 - Detection validation and reusable correlation searches
-- Apache web access-log analysis and HTTP request-pattern detection
-- HTTP status-code and request-path analysis
-- SOC alert prioritization using asset criticality, repetition, user impact and evidence quality
-- Multi-source alert assessment and priority justification
-- Wazuh server deployment preparation and pre-installation readiness assessment
-- Linux server resource, storage and connectivity validation
-- SIEM infrastructure and network planning
+
+### Wazuh Deployment and Operations
+
+- Wazuh server deployment preparation and SIEM infrastructure planning
 - Wazuh all-in-one deployment and core-service validation
+- Wazuh post-installation health checks and operational verification
 - Secure local dashboard access through SSH tunneling
-- Wazuh post-installation health checking and operational verification
-- Linux storage, LVM and filesystem recovery for SIEM troubleshooting
-- Wazuh Linux agent deployment and enrollment verification
-- Wazuh Windows agent deployment and enrollment verification
+- Linux server resource, storage, LVM and filesystem recovery for SIEM troubleshooting
+- Wazuh Linux and Windows agent deployment and enrollment verification
 - Wazuh manager-agent connectivity and enrollment-port validation
 - Windows endpoint connectivity and Wazuh service validation with PowerShell
 - Wazuh Threat Hunting and endpoint telemetry investigation
-- Wazuh rule correlation and source endpoint validation
-- MITRE ATT&CK mapping from Windows endpoint telemetry
+- Wazuh rule correlation, alert analysis and source-endpoint validation
 - Wazuh File Integrity Monitoring configuration and real-time file-change detection
 - File-integrity event validation and checksum-change analysis
-- Wazuh rule and alert analysis with event-context interpretation
-- First-response triage action definition from alert metadata
-- Brute-force-style authentication pattern detection and escalation assessment
-- Incident evidence collection and structured evidence organization
-- Windows Security log export and native EVTX preservation
-- Evidence-based MITRE ATT&CK technique mapping
+
+### Threat Detection, ATT&CK and Threat Intelligence
+
+- Evidence-based MITRE ATT&CK technique and tactic mapping
 - Threat intelligence and IOC enrichment using external reputation data
 - External IOC reputation and internal SIEM telemetry correlation
-- SOC incident reporting and structured incident documentation
-  
+- Context-based analyst prioritization of IOC findings
+
+### Evidence Handling and Documentation
+
+- Indicator collection, evidence preservation and technical documentation
+- Incident evidence collection and structured evidence organization
+- Windows Security log export and native EVTX preservation
+- Timeline, source-detail and authentication-evidence documentation
+
 ## Tools and Platforms
+
+### Virtualization and Operating Systems
 
 - Oracle VirtualBox
 - Ubuntu Linux / Ubuntu Server 24.04 LTS
 - Kali Linux
-- Windows
+- Windows / Windows 10
+
+### Network and Traffic Analysis
+
 - Wireshark
 - Nmap
 - Metasploitable 2
-- Windows Event Viewer (`eventvwr.msc`)
-- Windows Security, System and Application logs
+- Apache2 and Apache access logs (`/var/log/apache2/access.log`)
+- Firefox
+- OpenSSH / `sshd` and SSH local port forwarding (`ssh -L`)
+
+### SIEM and Security Monitoring
+
 - Splunk Enterprise
 - Splunk Search & Reporting
 - SPL commands including `rex`, `stats`, `eval`, `where`, `convert` and `table`
-- Apache2 and Apache access logs (`/var/log/apache2/access.log`)
-- Firefox
 - Wazuh manager, indexer and dashboard
-- Wazuh agent, `wazuh-authd` and `wazuh-remoted`
-- Filebeat
-- OpenSSH / `sshd` and SSH local port forwarding (`ssh -L`)
-- PowerShell commands including `Get-NetAdapter`, `New-NetIPAddress`, `Test-NetConnection` and `Get-Service`
-- Linux LVM utilities, `dpkg` and `fsck.ext4`
-- Linux CLI tools including `dig`, `curl`, `hostnamectl`, `hostname`, `uname`, `ps`, `ss`, `systemctl`, `journalctl`, `grep`, `awk`, `sort`, `ip`, `ping`, `free`, `nproc`, `lsblk`, `df` and `sudo`
-- Wazuh Dashboard - Threat Hunting / Events
-- Wazuh Windows agent
-- Windows System event logs
-- Windows 10 endpoint
+- Wazuh agents, `wazuh-authd` and `wazuh-remoted`
+- Wazuh Dashboard: Threat Hunting, Events, Document Details and MITRE ATT&CK views
 - Wazuh File Integrity Monitoring (`syscheck`)
-- Windows `ossec.conf`, `sc.exe` and `findstr`
-- Windows `net accounts` and `net use`
-- Windows `wevtutil` and native `.evtx` log preservation
-- Wazuh MITRE ATT&CK dashboard
+- Filebeat
 - VirusTotal
-  
+
+### Windows Analysis and Evidence Collection
+
+- Windows Event Viewer (`eventvwr.msc`)
+- Windows Security, System and Application logs
+- PowerShell commands including `Get-NetAdapter`, `New-NetIPAddress`, `Test-NetConnection` and `Get-Service`
+- Windows `wevtutil` and native `.evtx` log preservation
+- Windows `ossec.conf`, `sc.exe`, `findstr`, `net accounts` and `net use`
+
+### Linux Administration and CLI
+
+- Linux LVM utilities, `dpkg` and `fsck.ext4`
+- Linux CLI tools including `dig`, `curl`, `hostnamectl`, `hostname`, `uname`, `ps`, `ss`, `systemctl`, `journalctl`, `grep`, `awk`, `sort`, `uniq`, `tail`, `cat`, `nano`, `ip`, `ping`, `free`, `nproc`, `lsblk`, `df` and `sudo`
+
 ## Reports
 
 Each lab directory contains:
 
-- A short README describing the objective, environment, activities and learning outcomes.
+- A short README describing the objective, environment, activities, results and learning outcomes.
 - The full PDF report with screenshots and technical evidence.
 
 ## Ethical and Safety Notice
